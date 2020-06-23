@@ -42,5 +42,8 @@ hr{
   color: #de1ede;
 }
 .breadcrumb{
-  margin-bottom: 2rem;;
+  margin-bottom: 2rem;
+}
+.copyright{
+  margin-top: 2rem;
 }
