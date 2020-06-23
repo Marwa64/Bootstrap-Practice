@@ -1,5 +1,5 @@
 body{
-  padding: 50px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
   overflow-x: hidden;
 }
 .row-header{
@@ -46,4 +46,7 @@ hr{
 }
 .copyright{
   margin-top: 2rem;
+}
+textarea{
+  resize: none;
 }
