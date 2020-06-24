@@ -23,7 +23,7 @@
             <span class="navbar-toggler-icon"><span>
           </button>
           <div class="collapse navbar-collapse" id="Navbar">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
               <li class="nav-item active"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg">&nbsp</span>Home</a></li>
               <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg">&nbsp</span>About</a></li>
               <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg">&nbsp</span>Menu</a></li>
@@ -36,22 +36,19 @@
         <div class="jumbotron">
             <div class="container">
                 <div class="row row-header">
-                  <div class="col-12 col-sm-9 align-self-center">
+                  <div class="col-12 col-sm-6 align-self-center">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                   </div>
-                  <div class="col-12 col-sm-3 align-self-center">
-                    <img class="img-fluid" src="img/logo.png" alt="Con Fusion Logo"/>
+                  <div class="col-12 col-sm-6 align-self-center">
+                    <img class="img-fluid " src="img/logo.png" alt="Con Fusion Logo"/>
+                    <button class="btn btn-warning offset-sm-2 col-sm-5" onclick="window.location.href='#reserveform'"><b>Reserve Table</b></button>
                   </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="alert alert-warning alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Warning:</strong> Please <a href="tel:+852 1234 5678" class="alert-link">call</a> us to reserve for more than six guests.
-        </div>
         <div class="row row-content">
             <div class="col-sm-3 offset-sm-1 order-sm-last">
                 <h2 class="mb-3 mt-0">Our Lipsmacking Culinary Creations</h2>
@@ -73,11 +70,11 @@
             </div>
             <div class="col-sm-8 offset-sm-1">
               <div class="media">
+                <img src="img/buffet.png" alt="buffet" class="img-thumbnail mr-3 order-last align-self-center"/>
                 <div class="media-body">
                   <h3>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h3>
                   <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                 </div>
-                <img src="img/buffet.png" alt="buffet" class="img-thumbnail ml-3 align-self-center"/>
               </div>
             </div>
         </div>
@@ -97,8 +94,59 @@
               </div>
             </div>
         </div>
+        <div class="row row-content">
+          <div class="col-12 col-sm-8 offset-sm-2">
+            <div class="card">
+              <div class="card-header text-white bg-warning">
+                <h2>Reserve a Table</h2>
+              </div>
+              <div class="card-body">
+                <form id="reserveform">
+                  <div class="form-group row mb-4">
+                    <label class="col-sm-2 col-form-label"><b>Number of Guests</b></label>
+                    <div class="col-sm-6">
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" name="inlineRadioOptions" type="radio" id="radio1">
+                           <label class="form-check-label" for="radio1"><b>1</b></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" name="inlineRadioOptions" type="radio" id="radio2">
+                           <label class="form-check-label" for="radio2"><b>2</b></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" name="inlineRadioOptions" type="radio" id="radio3">
+                           <label class="form-check-label" for="radio3"><b>3</b></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" name="inlineRadioOptions" type="radio" id="radio4">
+                           <label class="form-check-label" for="radio4"><b>4</b></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" name="inlineRadioOptions" type="radio" id="radio5">
+                           <label class="form-check-label" for="radio5"><b>5</b></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" name="inlineRadioOptions" type="radio" id="radio6">
+                           <label class="form-check-label" for="radio6"><b>6</b></label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" form-group row mb-4">
+                    <label class="col-sm-2 col-form-label"><b>Date and Time</b></label>
+                    <span class="col-sm-4"><input type="text" class="form-control" placeholder="Date" id="date"></span>
+                    <span class="col-sm-4"><input type="text" class="form-control" placeholder="Time" id="time"></span>
+                  </div>
+                  <div class="form-group row mb-4">
+                    <div class="col-sm-2 offset-sm-2">
+                      <button class="btn bg-primary text-white" type="submit" name="submit"><b>Reserve</b></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-
     <footer class="footer">
         <div class="container">
             <div class="row">
