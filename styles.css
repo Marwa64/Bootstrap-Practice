@@ -35,9 +35,6 @@ hr{
 .navbar{
   background-color: #30214a;
 }
-.nav-link{
-  color:white;
-}
 .nav-link:hover{
   color: #de1ede;
 }
@@ -49,4 +46,9 @@ hr{
 }
 textarea{
   resize: none;
+}
+.tab-content{
+  border: solid 1px #ddd;
+  border-top: none;
+  padding: 15px;
 }
