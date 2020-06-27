@@ -52,3 +52,23 @@ textarea{
   border-top: none;
   padding: 15px;
 }
+#myCarousel {
+    border-radius: 5px;
+    background: #ffe9a8;
+}
+.carousel-item {
+  height: 200px;
+}
+.text-black{
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  .carousel-item{
+    height: 300px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .carousel-item{
+    height: 330px;
+  }
+}
