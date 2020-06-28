@@ -62,6 +62,12 @@ textarea{
 .text-black{
   color: black;
 }
+#carouselButtons{
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  z-index: 1;
+}
 @media screen and (max-width: 600px) {
   .carousel-item{
     height: 300px;
