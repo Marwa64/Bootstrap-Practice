@@ -62,7 +62,7 @@ textarea{
 .text-black{
   color: black;
 }
-#carouselButtons{
+#carouselButton{
   right: 0px;
   bottom: 0px;
   position: absolute;
