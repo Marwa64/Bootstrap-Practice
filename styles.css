@@ -1,80 +1,83 @@
-body{
+body {
   padding: 40px 0px 0px 0px;
   overflow-x: hidden;
 }
-.row-header{
-    margin:0px auto;
-    padding:0px;
+.row-header {
+  margin: 0px auto;
+  padding: 0px, 0px;
 }
 .row-content {
-    margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height:300px;
+  margin: 0px auto;
+  padding: 50px, 0px;
+  border-bottom: 1px ridge;
+  min-height: 300px;
 }
-.footer{
-    background-color: #D1C4E9;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px, 0px;
 }
 .jumbotron {
-    padding:70px 30px 70px 30px;
-    background: #9575CD ;
-    color:floralwhite;
-    margin-bottom: 1rem;
+  margin: 0px auto;
+  padding: 70px, 30px;
+  background: #9575CD;
+  color: floralwhite;
+  margin-bottom: 1rem;
 }
-address{
-    font-size:80%;
-    margin:0px;
-    padding-bottom: 25px;
-    color:#0f0f0f;
+address {
+  font-size: 80%;
+  margin: 0px;
+  padding-bottom: 25px;
+  color: #0f0f0f;
 }
-hr{
+hr {
   width: 100%;
 }
-.navbar{
+.navbar {
   background-color: #30214a;
 }
-.nav-link:hover{
+.nav-link:hover {
   color: #de1ede;
 }
-.breadcrumb{
+.breadcrumb {
   margin-bottom: 2rem;
 }
-.copyright{
+.copyright {
   margin-top: 2rem;
 }
-textarea{
+textarea {
   resize: none;
 }
-.tab-content{
+.tab-content {
   border: solid 1px #ddd;
   border-top: none;
   padding: 15px;
 }
-#myCarousel {
-    border-radius: 5px;
-    background: #ffe9a8;
+.carousel {
+  border-radius: 5px;
+  background: #ffe9a8;
 }
-.carousel-item {
-  height: 200px;
-}
-.text-black{
+.text-black {
   color: black;
 }
-#carouselButton{
+#carouselButton {
   right: 0px;
   bottom: 0px;
   position: absolute;
   z-index: 1;
 }
-@media screen and (max-width: 600px) {
-  .carousel-item{
+@media (min-width: 601px) {
+  .carousel-item {
+    height: 200px;
+  }
+}
+@media (max-width: 600px) and (min-width: 351px) {
+  .carousel-item {
     height: 300px;
   }
 }
-@media screen and (max-width: 350px) {
-  .carousel-item{
+@media (max-width: 350px) and (min-width: 100px) {
+  .carousel-item {
     height: 330px;
   }
 }
