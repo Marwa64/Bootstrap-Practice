@@ -1,0 +1,98 @@
+$lt-grey: #ddd;
+$bg-dark: #30214a;
+$bg-light: #9575CD;
+$bg-pale: #D1C4E9;
+
+// Height variable
+$carousel-item-height: 200px;
+
+// Mixin
+@mixin zero-margin ($pad-up-dn, $pad-left-right){
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+body{
+  padding: 40px 0px 0px 0px;
+  overflow-x: hidden;
+}
+
+.row-header{
+    @include zero-margin(0px, 0px);
+}
+.row-content {
+    @include zero-margin(50px, 0px);
+    border-bottom: 1px ridge;
+    min-height: 300px;
+}
+.footer{
+    background-color: $bg-pale;
+    @include zero-margin(20px, 0px);
+}
+.jumbotron {
+    @include zero-margin(70px, 30px);
+    background: $bg-light;
+    color: floralwhite;
+    margin-bottom: 1rem;
+}
+address{
+    font-size:80%;
+    margin:0px;
+    padding-bottom: 25px;
+    color:#0f0f0f;
+}
+hr{
+  width: 100%;
+}
+.navbar{
+  background-color: $bg-dark;
+}
+.nav-link:hover{
+  color: #de1ede;
+}
+.breadcrumb{
+  margin-bottom: 2rem;
+}
+.copyright{
+  margin-top: 2rem;
+}
+textarea{
+  resize: none;
+}
+.tab-content{
+  border: solid 1px $lt-grey;
+  border-top: none;
+  padding: 15px;
+}
+.carousel {
+    border-radius: 5px;
+    background: #ffe9a8;
+}
+.text-black{
+  color: black;
+}
+#carouselButton{
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  z-index: 1;
+}
+$small: 350px;
+$medium: 600px;
+$xlarge: 601px;
+
+@media screen and (min-width: $xlarge){
+  .carousel-item{
+    height: $carousel-item-height;
+  }
+}
+@media screen and (max-width: $medium) {
+  .carousel-item{
+    height: $carousel-item-height + 100px;
+  }
+}
+@media screen and (max-width: $small) {
+  .carousel-item{
+    height: $carousel-item-height + 130px;
+  }
+}
