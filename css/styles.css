@@ -66,6 +66,15 @@ textarea {
   position: absolute;
   z-index: 1; }
 
+.modal-header {
+  background-color: #30214a;
+  color: floralwhite; }
+  .modal-header .close {
+    color: floralwhite; }
+
+.modal-body {
+  background-color: #D1C4E9; }
+
 @media screen and (min-width: 601px) {
   .carousel-item {
     height: 200px; } }

@@ -77,6 +77,17 @@ textarea{
   position: absolute;
   z-index: 1;
 }
+.modal-header{
+  background-color: $bg-dark;
+  color: floralwhite;
+  .close{
+    color: floralwhite;
+  }
+}
+.modal-body{
+  background-color: $bg-pale;
+}
+
 $small: 350px;
 $medium: 600px;
 $xlarge: 601px;
