@@ -4,11 +4,12 @@
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f \"node_modules/font-awesome/fonts/*\" dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
@@ -21,7 +22,7 @@
     "lite-server": "^2.3.0",
     "node-sass": "^4.14.1",
     "onchange": "^3.3.0",
-    "parallelshell": "^3.0.2",
+    "parallelshell": "^3.0.1",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
